@@ -3,7 +3,7 @@ import React from 'react';
 function NavBar() {
   return (
     <div className="nav-bar">
-        <p>Building Permits </p>
+        <p>Chicago Building Permits </p>
     </div>
   );
 }
