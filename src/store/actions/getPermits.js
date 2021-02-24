@@ -7,7 +7,7 @@ export const getBuildingPermits = (
   return (dispatch, getState) => {
 
     dispatch({type:'START_LOADER'})
-    axios.get('https://data.cityofchicago.org/resource/building-permits.json?$LIMIT=10', {
+    axios.get('https://data.cityofchicago.org/resource/building-permits.json?$order=issue_date DESC&$limit=10', {
 
       headers: {
           'X-App-Token': 'TGpleItvHxCZhMaQRMqDNGNBL',
